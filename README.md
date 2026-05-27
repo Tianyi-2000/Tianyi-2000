@@ -40,4 +40,4 @@ Before focusing on data science and AI, I studied environmental science and work
 
 ## Connect
 
-- LinkedIn: paste your LinkedIn URL here
+- LinkedIn: (https://www.linkedin.com/in/tianyi-luo-b483b81ab/)
