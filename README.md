@@ -1,43 +1,48 @@
 # Hi, I'm Tianyi Luo
 
-I'm an MS Data Science student at the University of San Francisco, focused on AI engineering, data engineering, cloud infrastructure, and applied machine learning.
+Data engineer building cloud data platforms and ML systems end to end — from raw, messy sources to validated tables, trained models, and things people can actually use.
 
-I’m interested in building practical ML systems that connect real-world data, modeling, and deployment — especially in biomedical signal analysis, wildfire risk modeling, and cloud-based data pipelines.
+Currently finishing my M.S. in Data Science (Data Engineering concentration) at the University of San Francisco, and working as an ML research intern at UC San Diego's Manor Lab. I care most about the unglamorous parts that make systems trustworthy: data quality, entity resolution, evaluation design, and pipelines that fail loudly instead of silently.
 
-## What I'm Working On
+## Projects
 
-### OpenFire
+### [Cinema Atlas](https://github.com/Tianyi-2000/cinema-atlas) — Film Analytics Data Lakehouse
 
-Team wildfire risk assessment platform using satellite imagery, historical fire data, and weather features.
+A medallion lakehouse unifying **10,221 films** from TMDB, IMDb, and Wikidata into one connected analytical platform, with a Next.js app for exploring film relationships, popularity trends, and box-office history.
 
-My contributions focus on data pipeline exploration, BigQuery feature analysis, documentation, and MLOps/cloud system design.
+- End-to-end Bronze → Silver pipeline on Databricks + AWS S3, orchestrated with parallel ingestion branches
+- Two-pass entity resolution linking **67,000+ people** across sources (ID joins + fuzzy name matching)
+- Data-quality gates: snapshot deduplication, quarantine tables with audit trails, SCD Type 1/2 modeling via MERGE
 
-### ABR Synapse Prediction
+`Databricks` `Spark` `Delta Lake` `AWS S3` `Unity Catalog` `Next.js`
 
-Machine learning research project predicting cochlear synapse counts from auditory brainstem response (ABR) waveforms.
+### [OpenFire](https://github.com/tkovalcik/openfire) — Wildfire Risk Prediction Platform
 
-Built a two-stage ML pipeline using CNN-based waveform features with Random Forest and XGBoost models.
+A production geospatial ML platform (3-person team) predicting wildfire risk across Southern California on a 1 km grid, re-scored every 5 days on a fully scheduled cloud pipeline.
 
-## Selected Projects
+- 38 engineered features per cell in BigQuery; XGBoost with temporal holdouts to prevent spatiotemporal leakage
+- Scheduled batch inference on Cloud Run + Cloud Scheduler, with data contracts and row-count invariants
+- MLflow experiment tracking, Evidently drift monitoring, Docker + GitHub Actions CI/CD
 
-| Project | What It Does | Stack |
-|---|---|---|
-| OpenFire | Wildfire risk assessment platform using satellite, weather, and historical fire data | Python, SQL, BigQuery, GCP, MLflow, FastAPI, Docker |
-| ABR Synapse Prediction | Predicts cochlear synapse counts from ABR waveform data | Python, PyTorch, scikit-learn, XGBoost |
-| Data Engineering Coursework | Data cleaning, transformation, and analysis projects | Python, SQL, pandas |
-| Machine Learning Coursework | Regression, classification, and model evaluation projects | Python, scikit-learn, pandas |
+`BigQuery` `GCP Cloud Run` `XGBoost` `MLflow` `Docker` `GitHub Actions` `FastAPI`
 
-## Tech & Tools
+### ABR Synapse Prediction — ML Research, UC San Diego
 
-**Machine Learning:** Python, scikit-learn, PyTorch, XGBoost, Random Forest, model evaluation  
-**Data Engineering:** SQL, BigQuery, data pipelines, feature engineering, data cleaning  
-**Cloud & MLOps:** GCP, Docker, FastAPI, MLflow, GitHub Actions  
-**Data Analysis:** pandas, NumPy, matplotlib, exploratory data analysis  
+Research pipeline predicting cochlear synapse counts from auditory brainstem response waveforms — **15,741 recordings** across 162 subjects. Built a two-stage model (classifier feeding regression) with CNN-based waveform features, and leakage-proof evaluation using subject-level splits. *(Lab code private.)*
 
-## Background
+`Python` `PyTorch` `scikit-learn` `XGBoost`
 
-Before focusing on data science and AI, I studied environmental science and worked on sustainability-related research and policy analysis. I’m now building technical skills in machine learning systems, cloud data infrastructure, and applied AI projects.
+## Tech
+
+**Languages** — Python, SQL, PySpark, JavaScript, R
+**Data engineering** — Spark, Databricks, Delta Lake, Airflow, ETL/ELT, data modeling (star schema, SCD), data quality & validation
+**Cloud** — AWS (S3, EC2, EMR), GCP (BigQuery, Cloud Run), Docker, CI/CD, Git
+**ML** — PyTorch, scikit-learn, XGBoost, MLflow, Evidently, evaluation design
+
+## Beyond the code
+
+Before data engineering, I studied environmental science — which is how I ended up caring about fog sensors, wildfire risk, and what messy real-world data actually looks like. And Cinema Atlas started as a personal film log: I cared enough about connecting scattered film knowledge that I eventually built a data platform for it.
 
 ## Connect
 
-- LinkedIn: (https://www.linkedin.com/in/tianyi-luo-b483b81ab/)
+[LinkedIn](https://www.linkedin.com/in/tianyi-luo-b483b81ab/)
