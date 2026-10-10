@@ -36,7 +36,7 @@
   <tr>
     <td width="33%" valign="top">
       <h3>Bridge between teams</h3>
-      At Manor Lab I turned biologists' questions into data checks and coverage reports they could act on. At the startup I probe the platform API and partner tool catalogs before coding, which catches spec gaps early.
+      I probe the platform API and partner tool catalogs before coding, which catches spec gaps early.
     </td>
     <td width="33%" valign="top">
       <h3>Think from the user's side</h3>
