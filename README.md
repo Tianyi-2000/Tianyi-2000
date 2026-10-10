@@ -64,13 +64,13 @@
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Tianyi-2000/streaming-fraud-detection">Streaming Fraud Detection</a></h3>
-      Real-time Kafka pipeline that flags bot accounts and coordinated play bursts in 45K+ music streaming events. Versioned data contract on every event; checkpointed offsets and deduplication; load-tested at 100K+ events/s.<br><br>
+      Kafka pipeline that detects artificial streaming fraud in 45K+ music play events (team of two). My part: the cached MusicBrainz catalog, a seeded event generator with three fraud cohorts, the frozen Pydantic event contract, contract-validated replay into Redpanda, and the Streamlit review dashboard. Two keyed consumer stages with a re-key prove that no single partition key catches both fraud patterns.<br><br>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
       <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka">
       <img src="https://img.shields.io/badge/Redpanda-E14226?style=flat-square&logo=redpanda&logoColor=white" alt="Redpanda">
       <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Compose">
       <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic">
-      <img src="https://img.shields.io/badge/ArangoDB-DDE072?style=flat-square&logo=arangodb&logoColor=black" alt="ArangoDB">
+      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
     </td>
   </tr>
   <tr>
