@@ -25,7 +25,7 @@
     <td width="50%" valign="top">
       <h3>Education</h3>
       <b>M.S. in Data Science</b>, Concentration in Data Engineering<br>
-      University of San Francisco, Aug 2026<br><br>
+      University of San Francisco<br><br>
       <b>B.A. in Environmental Studies</b>, Minor in Computer Science<br>
       California State University, Monterey Bay
     </td>
