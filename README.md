@@ -1,29 +1,33 @@
 # Tianyi Luo
 
-Data engineer building batch and real-time pipelines with built-in data quality.
+Engineer working across data pipelines, ML systems, and LLM applications. I like building close to the people who use what I build.
 
-- Software Engineer (Data Integrations) at an early-stage AI developer-tools startup (stealth), San Francisco
+**Now**
+- Software Engineer (Data Integrations) at an early-stage AI developer-tools startup (stealth), San Francisco: data import pipelines and API / MCP integrations used by both people and AI coding agents
+<!-- - Building a personal LLM project with an evaluation harness (add when real) -->
+
+**Background**
 - M.S. in Data Science, Concentration in Data Engineering, University of San Francisco (Aug 2026)
-- Previously Machine Learning Researcher at Manor Lab, UC San Diego
-- Open to Data Engineer and AI Engineer roles
+- Machine Learning Researcher, Manor Lab, UC San Diego (2025 to 2026)
+- B.A. in Environmental Studies, Minor in Computer Science, CSU Monterey Bay
+
+**Open to:** AI Engineer, Data Engineer, Data Scientist, and Forward Deployed Engineer roles.
+
+## How I work
+
+- Bridge between teams: at Manor Lab I turned biologists' questions into data checks and coverage reports they could act on; at the startup I probe the platform API and partner tool catalogs before coding, which catches spec gaps early.
+- Think from the user's side: I present projects at startup meetups and adjust the pitch to the audience. I would rather ask what someone needs than build in isolation.
+- Read and apply research: currently reading on AI research agents and evaluation. I care about agent behavior that is measurable and reliable, not demos.
 
 ## Projects
 
-**[Cinema Atlas](https://github.com/Tianyi-2000/cinema-atlas)**: film data lakehouse on Databricks. Ingests IMDb, TMDB and Wikidata into an S3 lake, dbt silver models with tests and lineage, incremental daily runs, SCD Type 2 history, entity resolution linking 67K+ people across 10K+ films.
-Tech: Databricks (Workflows, Unity Catalog), Delta Lake, dbt, PySpark, AWS (S3, IAM, Glue)
-
-**[Streaming Fraud Detection](https://github.com/Tianyi-2000/streaming-fraud-detection)**: real-time Kafka pipeline that flags bot accounts and coordinated play bursts in 45K+ music streaming events. Versioned data contract on every event, checkpointed offsets and deduplication, load-tested at 100K+ events/s.
-Tech: Python, Kafka (Redpanda, Kafka Connect), Docker Compose, Pydantic, ArangoDB
-
-**[OpenFire](https://github.com/tkovalcik/openfire)**: wildfire risk ML platform for Southern California (team project). Built the batch pipeline that recomputes 38 features per 1 km cell every 5 days with an all-or-nothing publish contract, and the CI/CD for 5 containerized services.
-Tech: GCP (BigQuery, Cloud Run, Cloud Scheduler), Docker, GitHub Actions, MLflow, FastAPI, XGBoost
-
-**ABR Synapse Prediction** (Manor Lab, UC San Diego; lab code is private): ETL pipeline that turns 1,300+ raw auditory recordings from 125 mice into 12,187 validated waveforms, with schema checks and leakage-free train/test splits; 1D U-Net autoencoder producing 32-feature embeddings for downstream models.
-Tech: Python, pandas, PyTorch, scikit-learn
+（Cinema Atlas / Streaming Fraud Detection / OpenFire / ABR Synapse Prediction，四条同 v1）
 
 ## Skills
 
-Python, SQL, PySpark, dbt, Databricks, Delta Lake, Kafka, Airflow, Docker, Kubernetes, AWS (S3, IAM, Glue), GCP (BigQuery, Cloud Run), GitHub Actions, MLflow, FastAPI
+Data: Python, SQL, PySpark, dbt, Databricks, Delta Lake, Kafka, Airflow
+ML: PyTorch, scikit-learn, MLflow, XGBoost
+Cloud and tooling: AWS (S3, IAM, Glue), GCP (BigQuery, Cloud Run), Docker, Kubernetes, GitHub Actions, FastAPI, PostgreSQL
 
 ## Contact
 
