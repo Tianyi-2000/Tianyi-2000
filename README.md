@@ -1,48 +1,30 @@
-# Hi, I'm Tianyi Luo
+# Tianyi Luo
 
-Data engineer building cloud data platforms and ML systems end to end — from raw, messy sources to validated tables, trained models, and things people can actually use.
+Data engineer building batch and real-time pipelines with built-in data quality.
 
-Currently finishing my M.S. in Data Science (Data Engineering concentration) at the University of San Francisco, and working as an ML research intern at UC San Diego's Manor Lab. I care most about the unglamorous parts that make systems trustworthy: data quality, entity resolution, evaluation design, and pipelines that fail loudly instead of silently.
+- Software Engineer (Data Integrations) at an early-stage AI developer-tools startup (stealth), San Francisco
+- M.S. in Data Science, Concentration in Data Engineering, University of San Francisco (Aug 2026)
+- Previously Machine Learning Researcher at Manor Lab, UC San Diego
+- Open to Data Engineer and AI Engineer roles
 
 ## Projects
 
-### [Cinema Atlas](https://github.com/Tianyi-2000/cinema-atlas) — Film Analytics Data Lakehouse
+**[Cinema Atlas](https://github.com/Tianyi-2000/cinema-atlas)**: film data lakehouse on Databricks. Ingests IMDb, TMDB and Wikidata into an S3 lake, dbt silver models with tests and lineage, incremental daily runs, SCD Type 2 history, entity resolution linking 67K+ people across 10K+ films.
+Tech: Databricks (Workflows, Unity Catalog), Delta Lake, dbt, PySpark, AWS (S3, IAM, Glue)
 
-A medallion lakehouse unifying **10,221 films** from TMDB, IMDb, and Wikidata into one connected analytical platform, with a Next.js app for exploring film relationships, popularity trends, and box-office history.
+**[Streaming Fraud Detection](https://github.com/Tianyi-2000/streaming-fraud-detection)**: real-time Kafka pipeline that flags bot accounts and coordinated play bursts in 45K+ music streaming events. Versioned data contract on every event, checkpointed offsets and deduplication, load-tested at 100K+ events/s.
+Tech: Python, Kafka (Redpanda, Kafka Connect), Docker Compose, Pydantic, ArangoDB
 
-- End-to-end Bronze → Silver pipeline on Databricks + AWS S3, orchestrated with parallel ingestion branches
-- Two-pass entity resolution linking **67,000+ people** across sources (ID joins + fuzzy name matching)
-- Data-quality gates: snapshot deduplication, quarantine tables with audit trails, SCD Type 1/2 modeling via MERGE
+**[OpenFire](https://github.com/tkovalcik/openfire)**: wildfire risk ML platform for Southern California (team project). Built the batch pipeline that recomputes 38 features per 1 km cell every 5 days with an all-or-nothing publish contract, and the CI/CD for 5 containerized services.
+Tech: GCP (BigQuery, Cloud Run, Cloud Scheduler), Docker, GitHub Actions, MLflow, FastAPI, XGBoost
 
-`Databricks` `Spark` `Delta Lake` `AWS S3` `Unity Catalog` `Next.js`
+**ABR Synapse Prediction** (Manor Lab, UC San Diego; lab code is private): ETL pipeline that turns 1,300+ raw auditory recordings from 125 mice into 12,187 validated waveforms, with schema checks and leakage-free train/test splits; 1D U-Net autoencoder producing 32-feature embeddings for downstream models.
+Tech: Python, pandas, PyTorch, scikit-learn
 
-### [OpenFire](https://github.com/tkovalcik/openfire) — Wildfire Risk Prediction Platform
+## Skills
 
-A production geospatial ML platform (3-person team) predicting wildfire risk across Southern California on a 1 km grid, re-scored every 5 days on a fully scheduled cloud pipeline.
+Python, SQL, PySpark, dbt, Databricks, Delta Lake, Kafka, Airflow, Docker, Kubernetes, AWS (S3, IAM, Glue), GCP (BigQuery, Cloud Run), GitHub Actions, MLflow, FastAPI
 
-- 38 engineered features per cell in BigQuery; XGBoost with temporal holdouts to prevent spatiotemporal leakage
-- Scheduled batch inference on Cloud Run + Cloud Scheduler, with data contracts and row-count invariants
-- MLflow experiment tracking, Evidently drift monitoring, Docker + GitHub Actions CI/CD
+## Contact
 
-`BigQuery` `GCP Cloud Run` `XGBoost` `MLflow` `Docker` `GitHub Actions` `FastAPI`
-
-### ABR Synapse Prediction — ML Research, UC San Diego
-
-Research pipeline predicting cochlear synapse counts from auditory brainstem response waveforms — **15,741 recordings** across 162 subjects. Built a two-stage model (classifier feeding regression) with CNN-based waveform features, and leakage-proof evaluation using subject-level splits. *(Lab code private.)*
-
-`Python` `PyTorch` `scikit-learn` `XGBoost`
-
-## Tech
-
-**Languages** — Python, SQL, PySpark, JavaScript, R
-**Data engineering** — Spark, Databricks, Delta Lake, Airflow, ETL/ELT, data modeling (star schema, SCD), data quality & validation
-**Cloud** — AWS (S3, EC2, EMR), GCP (BigQuery, Cloud Run), Docker, CI/CD, Git
-**ML** — PyTorch, scikit-learn, XGBoost, MLflow, Evidently, evaluation design
-
-## Beyond the code
-
-Before data engineering, I studied environmental science — which is how I ended up caring about fog sensors, wildfire risk, and what messy real-world data actually looks like. And Cinema Atlas started as a personal film log: I cared enough about connecting scattered film knowledge that I eventually built a data platform for it.
-
-## Connect
-
-[LinkedIn](https://www.linkedin.com/in/tianyi-luo-b483b81ab/)
+tianyitokyoosaka@gmail.com | [LinkedIn](https://www.linkedin.com/in/tianyi-luo-b483b81ab)
