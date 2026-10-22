@@ -19,7 +19,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3>Now</h3>
-      <b>Software Engineer</b> at an early-stage AI developer-tools startup (stealth), San Francisco.<br>
+      <b>AI Engineer</b> at an early-stage AI developer-tools startup (stealth), San Francisco.<br>
       Data import pipelines and API / MCP integrations used by both people and AI coding agents.
     </td>
     <td width="50%" valign="top">
