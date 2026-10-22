@@ -17,15 +17,28 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td colspan="2" valign="top">
       <h3>Now</h3>
       <b>AI Engineer</b> at an early-stage AI developer-tools startup (stealth), San Francisco.<br>
-      Data import pipelines and API / MCP integrations used by both people and AI coding agents.
+      I build the import pipelines and API / MCP integrations that bring a team's existing work in from the tools they already use, designed for both people and their AI coding agents:
+      <ul>
+        <li>MCP tools that let an agent preview an import before applying it, with the agent-facing tool text cut 30% to fit the context budget</li>
+        <li>Chunked, resumable import runs with rate-limit backoff; re-running an import changes nothing</li>
+        <li>Server-side run approval in PostgreSQL with row-level security, so a run applies only the plan a person approved</li>
+        <li>In progress: imports an agent can start on its own over MCP with OAuth</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Before</h3>
+      <b>Machine Learning Researcher</b>, Manor Lab, UC San Diego<br>
+      ETL pipeline that turns 1,300+ raw auditory recordings from 125 mice into 12,187 validated waveforms, with schema checks and leakage-free splits; 1D U-Net autoencoder producing 32-feature embeddings for synapse-count models.
     </td>
     <td width="50%" valign="top">
       <h3>Education</h3>
       <b>M.S. in Data Science</b>, Concentration in Data Engineering<br>
-      University of San Francisco<br><br>
+      University of San Francisco
     </td>
   </tr>
 </table>
@@ -54,13 +67,13 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Tianyi-2000/cinema-atlas">Cinema Atlas</a></h3>
-      Film data lakehouse on Databricks. Ingests IMDb, TMDB and Wikidata into an S3 lake; dbt silver models with tests and lineage; incremental daily runs; SCD Type 2 history; entity resolution linking 67K+ people across 10K+ films.<br><br>
-      <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" alt="Databricks">
-      <img src="https://img.shields.io/badge/Delta%20Lake-003366?style=flat-square&logo=delta&logoColor=white" alt="Delta Lake">
-      <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" alt="dbt">
-      <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark">
-      <img src="https://img.shields.io/badge/AWS%20S3%20%7C%20IAM%20%7C%20Glue-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS">
+      <h3><a href="https://github.com/Tianyi-2000/PhysicalAI-sense-the-world">Edge AI Depth Estimation</a></h3>
+      ExecuTorch Hackathon, October 2026 (team of three). A Qualcomm-based Arduino VENTUNO Q labels its own training data by pairing camera frames with a time-of-flight sensor, then fits a depth head on frozen DINOv2 features on the board. Exported with ExecuTorch and the XNNPACK delegate: 3.6x faster than PyTorch on the same CPU (870 to 242 ms p50); int8 quantization shrank the model 4x.<br><br>
+      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+      <img src="https://img.shields.io/badge/ExecuTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="ExecuTorch">
+      <img src="https://img.shields.io/badge/DINOv2%20(Hugging%20Face)-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="DINOv2 (Hugging Face)">
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV">
+      <img src="https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white" alt="Arduino">
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Tianyi-2000/streaming-fraud-detection">Streaming Fraud Detection</a></h3>
@@ -75,6 +88,15 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3><a href="https://github.com/Tianyi-2000/cinema-atlas">Cinema Atlas</a></h3>
+      Film data lakehouse on Databricks. Ingests IMDb, TMDB and Wikidata into an S3 lake; dbt silver models with tests and lineage; incremental daily runs; SCD Type 2 history; entity resolution linking 67K+ people across 10K+ films.<br><br>
+      <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" alt="Databricks">
+      <img src="https://img.shields.io/badge/Delta%20Lake-003366?style=flat-square&logo=delta&logoColor=white" alt="Delta Lake">
+      <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" alt="dbt">
+      <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark">
+      <img src="https://img.shields.io/badge/AWS%20S3%20%7C%20IAM%20%7C%20Glue-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS">
+    </td>
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/tkovalcik/openfire">OpenFire</a></h3>
       Wildfire risk ML platform for Southern California (team project). Built the batch pipeline that recomputes 38 features per 1 km cell every 5 days with an all-or-nothing publish contract, and the CI/CD for 5 containerized services.<br><br>
       <img src="https://img.shields.io/badge/GCP%20BigQuery%20%7C%20Cloud%20Run-4285F4?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP">
@@ -84,14 +106,6 @@
       <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
       <img src="https://img.shields.io/badge/XGBoost-189FDD?style=flat-square" alt="XGBoost">
     </td>
-    <td width="50%" valign="top">
-      <h3>ABR Synapse Prediction</h3>
-      Manor Lab, UC San Diego. ETL pipeline that turns 1,300+ raw auditory recordings from 125 mice into 12,187 validated waveforms, with schema checks and leakage-free train/test splits; 1D U-Net autoencoder producing 32-feature embeddings for downstream models.<br><br>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-      <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
-      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
-    </td>
   </tr>
 </table>
 
@@ -99,25 +113,37 @@
 
 <table>
   <tr>
-    <td width="22%" valign="top"><b>Data</b></td>
+    <td width="22%" valign="top"><b>Languages</b></td>
     <td valign="top">
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
       <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL">
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+    </td>
+  </tr>
+  <tr>
+    <td width="22%" valign="top"><b>Data</b></td>
+    <td valign="top">
       <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark">
       <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" alt="dbt">
       <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" alt="Databricks">
       <img src="https://img.shields.io/badge/Delta%20Lake-003366?style=flat-square&logo=delta&logoColor=white" alt="Delta Lake">
       <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka">
       <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow">
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+      <img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL">
     </td>
   </tr>
   <tr>
-    <td width="22%" valign="top"><b>ML</b></td>
+    <td width="22%" valign="top"><b>ML and AI</b></td>
     <td valign="top">
       <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+      <img src="https://img.shields.io/badge/ExecuTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="ExecuTorch">
+      <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face">
       <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
       <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow">
       <img src="https://img.shields.io/badge/XGBoost-189FDD?style=flat-square" alt="XGBoost">
+      <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP">
+      <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude Code">
     </td>
   </tr>
   <tr>
@@ -129,7 +155,7 @@
       <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
       <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
       <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
     </td>
   </tr>
 </table>
